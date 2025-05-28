@@ -1,0 +1,1 @@
+Este proyecto consiste en la creación de una página web dedicada a la traducción, desarrollada como parte de un curso de Front-End. La página está estructurada con HTML semántico y utiliza las etiquetas <header>, <main>, y <footer> para organizar el contenido. El objetivo es crear lentamente una versión final apta para ofrecer y reservar servicios de traducción a los clientes.
