@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/traducciones.css">
+    
+    <title>TraduAR</title>
+    
+</head>
+
+<body>
+
+<header id="Top" class="navbar">
+<nav class="menu">
+    <a href="./index.html"><img src="./imagenes/image11.png"  width="20%" alt="Libro de traduccion" class="logo"><h1 class="logo">TraduAR</h1></a>
+<ul>
+    <li><a href="./Unirme.html">Unirme</a></li>
+    <li ><a href="./Traducciones.html" id="traducciones">Traducciones</a></li>
+    <li><a href="./Contacto.html">Contacto</a></li>
+</ul>
+</nav>
+</header>
+
+
+<div class="tradus">
+<div class="parte-izquierda">
+
+    <div class="producto-botones">
+        <button class="producto-boton active" data-service="Petróleo">🛢 Petróleo</button>
+        <button class="producto-boton" data-service="Salud">🩺 Salud</button>
+        <button class="producto-boton" data-service="Economía">📊 Economía</button>
+        <button class="producto-boton" data-service="Jurídico">📜 Jurídico</button>
+        <button class="producto-boton" data-service="Finanzas">💲 Finanzas</button>
+        <button class="producto-boton" data-service="Minería">⛏ Minería</button>
+    </div>
+
+<form class="form-cotiz" action="./compra.html">
+    <div class="form-grid">
+
+        <div class="form-grupo">
+            <label>Texto fuente<span>*</span></label>
+            <select id="sourceLang" required >
+                <option value="">Seleccione idioma</option>
+                <option>Inglés</option>
+                <option>Español</option>
+            </select>
+    </div>
+
+
+    <div class="form-grupo">
+        <label>Texto meta<span>*</span></label>
+        <select id="targetLang" required>
+            <option value="">Seleccione idioma</option>
+            <option>Inglés</option>
+            <option>Español</option>
+        </select>
+    </div>
+
+
+    <div class="form-grupo">
+        <label>Número de palabras</label>
+        <input type="number" id="wordCount">
+    </div>
+
+    <button class="pagar-btn">Continuar</button>
+
+    </div>
+
+
+
+</form>
+
+
+</div>
+
+<div class="parte-derecha">
+
+<div class="resumen">
+<h3>Resumen</h3>
+
+    <div class="resumen-detalle">
+        <p><strong id="resumen-producto">Traducción</strong></p>
+        <p><span id="resumen-idioma">Inglés a Español</span></p>
+        <p><span id="resumen-words">0 palabras</span> <span id="resumen-monto">$0.00</span></p>
+    </div>
+
+    <p class="resumen-total">Total: <strong id="resumenTotal">$0.00</strong></p>
+
+<button class="resumen-boton" id="agregarTraduccion">Agregar traducción</button>
+
+<div class="resumen-lista" id="resumenLista">
+    <h4>Traducciones añadidas</h4>
+    <ul id="listaCotizaciones"></ul>
+    <button id="vaciar">Vaciar</button>
+</div>
+</div>
+</div>
+</div>
+
+<div class="resenias">
+    <h1>¡Conocé lo que opinan nuestros clientes!</h1>
+    <div class="container-resenia"></div>
+    <div class="container-contenido" id="contenido"></div>
+    <button class="sig-resenia" onclick="traer()">Siguiente</button>
+</div>
+
+
+
+
+
+
+
+
+
+<script src="./java/script.js"></script>
+</body>
+
+</html>
